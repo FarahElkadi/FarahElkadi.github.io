@@ -14,6 +14,9 @@
 @import "vendors/bootstrap-4.3.1/forms";
 @import "vendors/bootstrap-4.3.1/buttons";
 
+$breakpoint-xs: 28rem;
+$breakpoint-sm: 32rem;
+
 $max-width: 64rem;
 
 body {
@@ -30,6 +33,11 @@ body {
     }
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: $primary;
+    font-weight: normal;
+}
+
 h1 {
     font-size: 2.5rem;
 }
@@ -42,18 +50,13 @@ h3 {
     font-size: 1.5rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: $primary;
-}
-
 p, li {
-    font-size: 1.2rem;;
+    font-size: 1.2rem;
 }
 
 .hero {
     position: relative;
     max-width: 100%;
-    //padding: 4rem 0;
 
     & > * {
         max-width: 64rem;
@@ -71,13 +74,26 @@ p, li {
         }
 
         .logo {
-            max-width: 16rem;
+            max-width: 60%;
             // https://codepen.io/sosuke/pen/Pjoqqp
             filter: invert(27%) sepia(85%) saturate(5764%) hue-rotate(146deg) brightness(96%) contrast(99%);
         }
 
         .label {
-            max-width: 6rem;
+            max-width: 30%;
+            margin-left: 10%;
+        }
+
+        @media (min-width: $breakpoint-xs) {
+            .label {
+                max-width: 8rem;
+            }
+        }
+
+        @media (min-width: $breakpoint-sm) {
+            .logo {
+                max-width: 16rem;
+            }
         }
     }
 
@@ -121,19 +137,26 @@ p, li {
                 background-color: rgba($primary ,0.8);
                 padding: 2rem;
                 height: 12rem;
-    
-                .title, .subtitle {
-                    font-weight: bold;
-                }
             
                 .title {
-                    font-size: 3rem;
+                    font-size: 2rem;
                     color: $white;
+                    font-weight: 600;
                 }
             
                 .subtitle {
-                    font-style: italic;
+                    font-size: 1.5rem;
                     color: $white;
+                }
+
+                @media (min-width: $breakpoint-sm) {
+                    .title {
+                        font-size: 3rem;
+                    }
+
+                    .subtitle {
+                        font-size: 2rem;
+                    }
                 }
             }
         }
@@ -166,7 +189,7 @@ p, li {
     padding-top: 4rem;
 
     .section-title {
-        font-size: 2.5rem;
+        //font-size: 2.5rem;
         margin-bottom: 2rem;
     }
 
@@ -177,9 +200,12 @@ p, li {
     }
 
     .item {
+        margin-bottom: 3rem;
+
         h1 {
             color: $gray-900;
-            font-size: 2rem;
+            font-size: 1.5rem;
+            text-transform: uppercase;
         }
 
         .title {

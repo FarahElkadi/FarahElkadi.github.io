@@ -2604,6 +2604,11 @@ body > * {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #018837;
+  font-weight: normal;
+}
+
 h1 {
   font-size: 2.5rem;
 }
@@ -2614,10 +2619,6 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #018837;
 }
 
 p, li {
@@ -2642,11 +2643,22 @@ p, li {
   max-width: 100%;
 }
 .hero .brand .logo {
-  max-width: 16rem;
+  max-width: 60%;
   filter: invert(27%) sepia(85%) saturate(5764%) hue-rotate(146deg) brightness(96%) contrast(99%);
 }
 .hero .brand .label {
-  max-width: 6rem;
+  max-width: 30%;
+  margin-left: 10%;
+}
+@media (min-width: 28rem) {
+  .hero .brand .label {
+    max-width: 8rem;
+  }
+}
+@media (min-width: 32rem) {
+  .hero .brand .logo {
+    max-width: 16rem;
+  }
 }
 .hero .cover {
   width: 100%;
@@ -2686,16 +2698,22 @@ p, li {
   padding: 2rem;
   height: 12rem;
 }
-.hero .cover .text-container .text .title, .hero .cover .text-container .text .subtitle {
-  font-weight: bold;
-}
 .hero .cover .text-container .text .title {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #fff;
+  font-weight: 600;
 }
 .hero .cover .text-container .text .subtitle {
-  font-style: italic;
+  font-size: 1.5rem;
   color: #fff;
+}
+@media (min-width: 32rem) {
+  .hero .cover .text-container .text .title {
+    font-size: 3rem;
+  }
+  .hero .cover .text-container .text .subtitle {
+    font-size: 2rem;
+  }
 }
 
 .cover-image {
@@ -2724,7 +2742,6 @@ p, li {
   padding-top: 4rem;
 }
 .section .section-title {
-  font-size: 2.5rem;
   margin-bottom: 2rem;
 }
 .section .section-subtitle {
@@ -2732,9 +2749,13 @@ p, li {
   font-weight: 400;
   opacity: 0.8;
 }
+.section .item {
+  margin-bottom: 3rem;
+}
 .section .item h1 {
   color: #212529;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 .section .item .title {
   font-size: 1rem;
