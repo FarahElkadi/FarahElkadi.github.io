@@ -2622,7 +2622,7 @@ h3 {
 }
 
 p, li {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .hero {
@@ -2740,6 +2740,15 @@ p, li {
 
 .section {
   padding-top: 4rem;
+}
+.section p {
+  text-align: justify;
+}
+.section p strong {
+  font-weight: 600;
+}
+.section p a {
+  font-weight: 600;
 }
 .section .section-title {
   margin-bottom: 2rem;

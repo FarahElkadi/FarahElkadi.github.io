@@ -51,7 +51,7 @@ h3 {
 }
 
 p, li {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .hero {
@@ -187,6 +187,18 @@ p, li {
 
 .section {
     padding-top: 4rem;
+
+    p {
+        text-align: justify;
+
+        strong {
+            font-weight: 600;
+        }
+
+        a {
+            font-weight: 600;
+        }
+    }
 
     .section-title {
         //font-size: 2.5rem;
