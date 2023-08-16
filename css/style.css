@@ -2752,6 +2752,9 @@ p, li {
 .section .item {
   margin-bottom: 3rem;
 }
+.section .item:last-child {
+  margin-bottom: 0;
+}
 .section .item h1 {
   color: #212529;
   font-size: 1.5rem;
