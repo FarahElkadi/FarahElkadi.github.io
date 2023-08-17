@@ -233,6 +233,21 @@ p, li {
     }
 }
 
+.info-halal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .label {
+        max-width: 4rem;
+        margin-right: 1rem;
+    }
+
+    .description {
+        margin-bottom: 0;
+    }
+}
+
 .order-form {
     .form-group {
         margin-bottom: 1.5rem;

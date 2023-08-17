@@ -2776,6 +2776,19 @@ p, li {
   margin-bottom: 0.2rem;
 }
 
+.info-halal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.info-halal .label {
+  max-width: 4rem;
+  margin-right: 1rem;
+}
+.info-halal .description {
+  margin-bottom: 0;
+}
+
 .order-form .form-group {
   margin-bottom: 1.5rem;
 }
