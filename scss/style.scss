@@ -233,6 +233,35 @@ p, li {
     }
 }
 
+.products {
+    .product {
+        margin-bottom: 3rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .link {
+            text-decoration: none;
+        }
+
+        .image {
+            max-width: 100%;
+            opacity: 0.75;
+            margin-bottom: 1rem;
+        }
+
+        .title {
+            font-size: 1.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: $gray-900;
+        }
+    }
+}
+
 .info-halal {
     display: flex;
     flex-direction: row;

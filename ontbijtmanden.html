@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Ontbijtmanden - Hanny's</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+<div class="hero">
+    <div class="brand">
+        <img class="logo" src="img/hannys.svg" alt="Hanny's logo">
+    </div>
+
+    <div class="cover">
+        <div class="image-overlay"></div>
+        <div class="text-container">
+            <div class="text">
+                <h1 class="title">Ontbijtmanden</h1>
+                <h2 class="subtitle">Vers geleverd aan uw voordeur</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="section">
+    <h2 class="section-title">Praktische info</h2>
+    <p>
+        Onze ontbijtmanden dienen <strong>2 dagen op voorhand</strong> voor 12:00 besteld te worden via het
+        <a href="#order">bestelformulier</a> onderaan deze pagina. Wij zullen steeds bevestigen via e-mail of SMS
+        indien wij uw bestelling goed ontvangen hebben.
+    </p>
+
+    <div class="info-halal">
+        <img class="label" src="img/halal.svg" alt="Halal logo">
+        <p class="description">
+            Wij gebruiken enkel verse ingrediënten die bovendien ook <strong>halal</strong> zijn.
+        </p>
+    </div>
+</section>
+
+<section class="section" id="assortment">
+    <div class="assortment">
+        <h2 class="section-title">Assortiment</h2>
+
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 item">
+                <h1>Klein ontbijt</h1>
+                <p class="title">Prijs</p>
+                <p>?? EUR</p>
+                <p class="title">Wat zit er in?</p>
+                <ul>
+                    <li>2 koffiekoeken</li>
+                    <li>2 pistolets/sandwiches</li>
+                    <li>Beleg</li>
+                    <li>Vers geperst fruitsap</li>
+                    <li>Hardgekookt ei</li>
+                    <li>Thee-kit</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 item">
+                <h1>Ik heb tijd ontbijt</h1>
+                <p class="title">Prijs</p>
+                <p>?? EUR</p>
+                <p class="title">Wat zit er in?</p>
+                <ul>
+                    <li>2 koffiekoeken</li>
+                    <li>2 pistolets/sandwiches</li>
+                    <li>Beleg</li>
+                    <li>Vers geperst fruitsap</li>
+                    <li>Hardgekookt ei</li>
+                    <li>Thee-kit</li>
+                    <li>Yoghurt</li>
+                    <li>Fruit</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 item">
+                <h1>Luxe ontbijt</h1>
+                <p class="title">Prijs</p>
+                <p>?? EUR</p>
+                <p class="title">Wat zit er in?</p>
+                <ul>
+                    <li>2 koffiekoeken</li>
+                    <li>2 pistolets/sandwiches</li>
+                    <li>Beleg</li>
+                    <li>Vers geperst fruitsap</li>
+                    <li>Hardgekookt ei</li>
+                    <li>Thee-kit</li>
+                    <li>Yoghurt</li>
+                    <li>Fruit</li>
+                    <li>Quiche met zalm</li>
+                    <li>Taartje / Muffin</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="order" class="section">
+    <h2 class="section-title">Bestellen</h2>
+
+    <form action="#"
+          method="POST"
+          accept-charset="UTF-8"
+          class="order-form">
+        <div class="row">
+            <div class="form-group col-12 col-sm-6">
+                <label for="firstName">Voornaam</label>
+                <input id="firstName"
+                       class="form-control"
+                       type="text"
+                       name="firstName"
+                       required
+                       placeholder="John">
+            </div>
+            <div class="form-group col-12 col-sm-6">
+                <label for="lastName">Achternaam</label>
+                <input id="lastName"
+                       class="form-control"
+                       type="text"
+                       name="lastName"
+                       required
+                       placeholder="Doe">
+            </div>
+        </div>
+        <div class="form-group email-address">
+            <label for="email">E-mailadres</label>
+            <input id="email"
+                   class="form-control"
+                   type="email"
+                   name="email"
+                   required
+                   aria-describedby="emailHelp"
+                   placeholder="john.doe@example.com">
+            <small id="emailHelp" class="form-text text-muted">
+                We delen deze gegevens met niemand.
+            </small>
+        </div>
+        <div class="form-group email-address">
+            <label for="phone">Telefoonnummer</label>
+            <input id="phone"
+                   class="form-control"
+                   type="tel"
+                   name="phone"
+                   required
+                   aria-describedby="phoneHelp"
+                   placeholder="0412 34 56 78">
+            <small id="phoneHelp" class="form-text text-muted">
+                We delen deze gegevens met niemand.
+            </small>
+        </div>
+        <div class="form-group address">
+            <label for="address">Adres</label>
+            <input id="address"
+                   class="form-control"
+                   type="text"
+                   name="address"
+                   minlength="12"
+                   required>
+        </div>
+        <div class="form-group address">
+            <label for="date">Leveringsdatum</label>
+            <input id="date"
+                   class="form-control"
+                   type="date"
+                   name="date"
+                   required>
+        </div>
+        <div class="form-group message">
+            <label for="message">Bestelling</label>
+            <textarea
+                    id="message"
+                    class="form-control"
+                    name="message"
+                    required
+                    minlength="10"
+                    placeholder="Geef hier uw bestelling door"
+                    rows="4"
+            ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary submit-button">Plaats bestelling</button>
+    </form>
+</section>
+
+<script src="js/bootstrap/bootstrap.bundle.js"></script>
+</body>
+</html>

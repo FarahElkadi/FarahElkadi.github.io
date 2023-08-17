@@ -2776,6 +2776,28 @@ p, li {
   margin-bottom: 0.2rem;
 }
 
+.products .product {
+  margin-bottom: 3rem;
+}
+.products .product:last-child {
+  margin-bottom: 0;
+}
+.products .product .link {
+  text-decoration: none;
+}
+.products .product .image {
+  max-width: 100%;
+  opacity: 0.75;
+  margin-bottom: 1rem;
+}
+.products .product .title {
+  font-size: 1.5rem;
+}
+.products .product .subtitle {
+  font-size: 1.2rem;
+  color: #212529;
+}
+
 .info-halal {
   display: flex;
   flex-direction: row;
